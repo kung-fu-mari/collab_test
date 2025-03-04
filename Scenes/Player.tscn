@@ -1,0 +1,114 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgd31hrfo382p"]
+
+[ext_resource type="Texture2D" uid="uid://b0pa4o86nlq7c" path="res://scribble/PNG/Default/character_handGreen.png" id="1_lbe2p"]
+[ext_resource type="Texture2D" uid="uid://dsls1ivjrksm7" path="res://scribble/PNG/Default/character_roundGreen.png" id="2_txsri"]
+
+[sub_resource type="Animation" id="Animation_tefw2"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BodySprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RightHandSprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-33, 10)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LeftHandSprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(33, 10)]
+}
+
+[sub_resource type="Animation" id="Animation_4h225"]
+resource_name = "run"
+length = 0.4
+loop_mode = 2
+step = 0.3333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BodySprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.206034, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.703125, 1), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RightHandSprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.20473, 0.399028),
+"transitions": PackedFloat32Array(1, 0.466516, 1),
+"update": 0,
+"values": [Vector2(-33, 10), Vector2(4, 17), Vector2(30, 3.00001)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LeftHandSprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.170826, 0.236027, 0.4),
+"transitions": PackedFloat32Array(1.46409, 1, 1, 1),
+"update": 0,
+"values": [Vector2(35, 0), Vector2(8, 13), Vector2(-14, 16), Vector2(-32, 10)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xo7ga"]
+_data = {
+"RESET": SubResource("Animation_tefw2"),
+"run": SubResource("Animation_4h225")
+}
+
+[node name="BeanHands" type="Node2D"]
+position = Vector2(703, 478)
+
+[node name="LeftHandSprite" type="Sprite2D" parent="."]
+modulate = Color(0.476578, 0.476578, 0.476578, 1)
+position = Vector2(-24.8324, 12.3892)
+texture = ExtResource("1_lbe2p")
+
+[node name="BodySprite" type="Sprite2D" parent="."]
+position = Vector2(0.500035, 0)
+scale = Vector2(0.900064, 1)
+texture = ExtResource("2_txsri")
+
+[node name="RightHandSprite" type="Sprite2D" parent="."]
+position = Vector2(27.5687, 4.30916)
+texture = ExtResource("1_lbe2p")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xo7ga")
+}
