@@ -158,74 +158,6 @@ tracks/11/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_nknsx"]
-resource_name = "spear_stab_1"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Flipper/LeftHandSprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0352322, 0.102341, 0.140929, 0.157706, 0.189583, 0.211393, 0.558681, 0.701366, 0.734842, 0.760008),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(40, -18), Vector2(37, -7), Vector2(27, -1), Vector2(20, 5), Vector2(13, 10), Vector2(-8, 25), Vector2(-20, 24), Vector2(-20, 24), Vector2(78, 12), Vector2(97.0001, 12), Vector2(78, 12)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Flipper/RightHandSprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.0318767, 0.104019, 0.16945, 0.211393, 0.563714, 0.602302, 0.701366, 0.734842, 0.760008),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(28, 14), Vector2(24, 22), Vector2(11, 19), Vector2(-36.2, 18), Vector2(-38, 5), Vector2(-38, 5), Vector2(-36.2, 18), Vector2(50, 1), Vector2(69.0001, 1), Vector2(50, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Flipper/RightHandSprite:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.0318767, 0.104019, 0.162739, 0.213071, 0.562037, 0.649278, 0.701366),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, 0.0500717, 0.163392, 1.57079, 1.91479, 1.91479, 1.57079, 1.57079]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Flipper/LeftHandSprite:z_index")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [1]
-}
-tracks/4/type = "method"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath(".")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0.570425, 0.765041),
-"transitions": PackedFloat32Array(1, 1),
-"values": [{
-"args": [true],
-"method": &"set_spear_hitbox"
-}, {
-"args": [false],
-"method": &"set_spear_hitbox"
-}]
-}
-
 [sub_resource type="Animation" id="Animation_fsb2l"]
 resource_name = "run"
 length = 0.4
@@ -302,6 +234,74 @@ tracks/5/keys = {
 "transitions": PackedFloat32Array(1, 0.75281, 1, 1),
 "update": 0,
 "values": [0.0, -0.233754, -0.233754, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_nknsx"]
+resource_name = "spear_stab_1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Flipper/LeftHandSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0352322, 0.102341, 0.140929, 0.157706, 0.189583, 0.211393, 0.558681, 0.701366, 0.734842, 0.760008),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(40, -18), Vector2(37, -7), Vector2(27, -1), Vector2(20, 5), Vector2(13, 10), Vector2(-8, 25), Vector2(-20, 24), Vector2(-20, 24), Vector2(78, 12), Vector2(97.0001, 12), Vector2(78, 12)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Flipper/RightHandSprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0318767, 0.104019, 0.16945, 0.211393, 0.563714, 0.602302, 0.701366, 0.734842, 0.760008),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(28, 14), Vector2(24, 22), Vector2(11, 19), Vector2(-36.2, 18), Vector2(-38, 5), Vector2(-38, 5), Vector2(-36.2, 18), Vector2(50, 1), Vector2(69.0001, 1), Vector2(50, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Flipper/RightHandSprite:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0318767, 0.104019, 0.162739, 0.213071, 0.562037, 0.649278, 0.701366),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0500717, 0.163392, 1.57079, 1.91479, 1.91479, 1.57079, 1.57079]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Flipper/LeftHandSprite:z_index")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.570425, 0.765041),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [true],
+"method": &"set_spear_hitbox"
+}, {
+"args": [false],
+"method": &"set_spear_hitbox"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_scqe6"]
@@ -400,7 +400,6 @@ collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flipper/RightHandSprite/SpearSprite/Hitbox"]
 position = Vector2(-3.93391e-06, -3.75509e-06)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_sai8i")
 
 [connection signal="area_entered" from="Flipper/HurtBox" to="." method="_on_hurt_box_area_entered"]

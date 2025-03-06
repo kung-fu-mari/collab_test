@@ -43,7 +43,15 @@ func _physics_process(delta: float) -> void:
 				current_state = "idle"
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	move_and_slide()
-	
+
+func blaster():
+	var bullet = preload("res://Scenes/bullet.tscn").instantiate()
+	bullet.global_position = $SpriteContainer/LeftHandSprite/blaster/bulletpostion.global_position
+	print($SpriteContainer.scale.x)
+	bullet.dir = $SpriteContainer.scale.x
+	bullet.shooter = self
+	get_parent().add_child(bullet)
+		
 func _process(_delta: float) -> void:
 	if global_position.y > 550:
 		get_tree().reload_current_scene()
@@ -51,6 +59,8 @@ func _process(_delta: float) -> void:
 	handle_animation()
 
 func check_for_attack() -> void:
+	if Input.is_action_just_pressed("shoot") and current_state != "swinging":
+		current_state = "shooting"
 	if Input.is_action_pressed("attack") and current_state != "swinging":
 		current_state = "swinging"
 		hitbox.set_collision_layer_value(1, true)
@@ -59,6 +69,8 @@ func handle_animation() -> void:
 	if current_state == "swinging":
 		if anim_player.current_animation != "swing_sword_1":
 			anim_player.play("swing_sword_1")
+	elif current_state == "shooting":
+		anim_player.play("run_gun")
 	elif current_state == "running":
 		if anim_player.current_animation != "run":
 			anim_player.play("run")

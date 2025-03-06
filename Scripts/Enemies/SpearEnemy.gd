@@ -33,7 +33,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 func _process(_delta: float) -> void:
-	if not cliff_check.is_colliding():
+	if not cliff_check.is_colliding() and is_on_floor():
 		state = "patrolling"
 		march_direction *= -1
 		$Flipper.scale.x *= -1
@@ -70,8 +70,12 @@ func chase_player() -> void:
 func _on_hurt_box_area_entered(area: Area2D) -> void:
 	if area.is_in_group("player_weapon") and current_hp > 0:
 		damage_flash()
+		anim_player.stop()
+		anim_player.play(anim_player.assigned_animation)
 		take_knockback()
 		take_damage()
+		if area.is_in_group("bullet"):
+			area.queue_free()
 
 func damage_flash() -> void:
 	$Flipper/BodySprite.modulate = Color.CRIMSON

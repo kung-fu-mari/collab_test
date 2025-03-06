@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dcye8ek4qtarf" path="res://Scenes/Enemies/DummyBean.tscn" id="1_h64f8"]
 [ext_resource type="PackedScene" uid="uid://cgd31hrfo382p" path="res://Scenes/Player/Player.tscn" id="2_okxb6"]
-[ext_resource type="Texture2D" uid="uid://diwi07ncos5jj" path="res://scribble/Spritesheet/spritesheet_default.png" id="3_7p7rp"]
+[ext_resource type="Texture2D" uid="uid://diwi07ncos5jj" path="res://collab_test/scribble/Spritesheet/spritesheet_default.png" id="3_7p7rp"]
 [ext_resource type="PackedScene" uid="uid://chwcd6r67wrek" path="res://Scenes/Enemies/SpearEnemy.tscn" id="4_okxb6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0eagq"]
