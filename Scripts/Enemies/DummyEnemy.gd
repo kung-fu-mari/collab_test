@@ -23,9 +23,16 @@ func _physics_process(delta: float) -> void:
 	velocity.x = move_toward(velocity.x, 0, FRICTION)
 	move_and_slide()
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if global_position.y > 550:
 		die_and_respawn()
+	face_player()
+	
+func face_player() -> void:
+	if player.global_position.x > self.global_position.x:
+		$Flipper.scale.x = 1
+	elif player.global_position.x < self.global_position.x:
+		$Flipper.scale.x = -1
 		
 func _on_hurt_box_area_entered(area: Area2D) -> void:
 	if area.is_in_group("player_weapon") and current_hp > 0:
@@ -34,9 +41,9 @@ func _on_hurt_box_area_entered(area: Area2D) -> void:
 		take_damage()
 
 func damage_flash() -> void:
-	$BodySprite.modulate = Color.CRIMSON
+	$Flipper/BodySprite.modulate = Color.CRIMSON
 	var color_tween = self.create_tween()
-	color_tween.tween_property($BodySprite, "modulate", Color.WHITE, 0.1)
+	color_tween.tween_property($Flipper/BodySprite, "modulate", Color.WHITE, 0.1)
 		
 func take_damage() -> void:
 	current_hp -= 1

@@ -6,11 +6,13 @@ extends CharacterBody2D
 const SPEED := 300.0
 const JUMP_VELOCITY := -400.0
 const MAX_JUMPS := 2
+const MAX_HP := 10
+const KNOCKBACK := 600
+const LAUNCH := 150
 
+var current_hp := MAX_HP
 var jumps_left := MAX_JUMPS
 var current_state : String = "idle"
-#var running := false
-#var swinging := false
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -33,6 +35,7 @@ func _physics_process(delta: float) -> void:
 			$SpriteContainer.scale.x = -1
 		else:
 			$SpriteContainer.scale.x = 1
+			scale.x = 1
 		velocity.x = direction * SPEED
 	else:
 		if velocity.x == 0:
@@ -69,3 +72,27 @@ func set_sword_hitbox(value: bool) -> void:
 	else:
 		current_state = ""
 	hitbox.set_collision_layer_value(1, value)
+	
+func _on_hurt_box_area_entered(area: Area2D) -> void:
+	if area.is_in_group("damages_player") and current_hp > 0:
+		var enemy = area.owner
+		damage_flash()
+		take_knockback(enemy)
+		take_damage()
+
+func damage_flash() -> void:
+	$SpriteContainer/BodySprite.modulate = Color.CRIMSON
+	var color_tween = self.create_tween()
+	color_tween.tween_property($SpriteContainer/BodySprite, "modulate", Color.WHITE, 0.1)
+		
+func take_damage() -> void:
+	current_hp -= 1
+	if current_hp <= 0:
+		get_tree().reload_current_scene()
+			
+func take_knockback(enemy) -> void:
+	if enemy.global_position.x > self.global_position.x:
+		velocity.x -= KNOCKBACK
+	else:
+		velocity.x += KNOCKBACK
+	velocity.y -= LAUNCH

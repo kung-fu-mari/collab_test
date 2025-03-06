@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [global_group]
 
 player_weapon="Allows enemy area2d's to take damage from player area2d's"
+player="Monsters will attack members of this group"
+damages_player="This group triggers the players hurtbox on collision"
 
 [input]
 
