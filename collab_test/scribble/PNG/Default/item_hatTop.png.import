@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcdjvx8c07l1f"
-path="res://.godot/imported/item_hatTop.png-27640748c5bf1d53e6563202cb5e1a61.ctex"
+path="res://.godot/imported/item_hatTop.png-04f2e104923bf3c345332789458379c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Default/item_hatTop.png"
-dest_files=["res://.godot/imported/item_hatTop.png-27640748c5bf1d53e6563202cb5e1a61.ctex"]
+source_file="res://scribble/PNG/Default/item_hatTop.png"
+dest_files=["res://.godot/imported/item_hatTop.png-04f2e104923bf3c345332789458379c4.ctex"]
 
 [params]
 

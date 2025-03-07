@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhto8l2sihyu4"
-path="res://.godot/imported/item_spear.png-c742991e9c15278f940531c4a46c837d.ctex"
+path="res://.godot/imported/item_spear.png-23e5c567aa900fd30a535ed1649f3589.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Default/item_spear.png"
-dest_files=["res://.godot/imported/item_spear.png-c742991e9c15278f940531c4a46c837d.ctex"]
+source_file="res://scribble/PNG/Default/item_spear.png"
+dest_files=["res://.godot/imported/item_spear.png-23e5c567aa900fd30a535ed1649f3589.ctex"]
 
 [params]
 

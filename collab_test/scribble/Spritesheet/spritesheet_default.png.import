@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://diwi07ncos5jj"
-path="res://.godot/imported/spritesheet_default.png-dafd9395aaa63d8c634ab799acd06387.ctex"
+path="res://.godot/imported/spritesheet_default.png-9d029caead93f7ebc46a03b6b70d6cb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/Spritesheet/spritesheet_default.png"
-dest_files=["res://.godot/imported/spritesheet_default.png-dafd9395aaa63d8c634ab799acd06387.ctex"]
+source_file="res://scribble/Spritesheet/spritesheet_default.png"
+dest_files=["res://.godot/imported/spritesheet_default.png-9d029caead93f7ebc46a03b6b70d6cb5.ctex"]
 
 [params]
 

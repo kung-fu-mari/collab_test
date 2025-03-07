@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp2rc78kucm1s"
-path="res://.godot/imported/effect_blast.png-88ec1ac0a39f8d19d21d8c1ea97062ab.ctex"
+path="res://.godot/imported/effect_blast.png-aa5b652bb918a4c8b343cfad5c782d83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/effect_blast.png"
-dest_files=["res://.godot/imported/effect_blast.png-88ec1ac0a39f8d19d21d8c1ea97062ab.ctex"]
+source_file="res://scribble/PNG/Retina/effect_blast.png"
+dest_files=["res://.godot/imported/effect_blast.png-aa5b652bb918a4c8b343cfad5c782d83.ctex"]
 
 [params]
 

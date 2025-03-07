@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rqy5h64dqmke"
-path="res://.godot/imported/tile_coin.png-02881fbc6e86f67eeb9fa139c2ef63f4.ctex"
+path="res://.godot/imported/tile_coin.png-7e9cfe23aae189ec8657144cc61be01c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Default/tile_coin.png"
-dest_files=["res://.godot/imported/tile_coin.png-02881fbc6e86f67eeb9fa139c2ef63f4.ctex"]
+source_file="res://scribble/PNG/Default/tile_coin.png"
+dest_files=["res://.godot/imported/tile_coin.png-7e9cfe23aae189ec8657144cc61be01c.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l8dlietdtac7"
-path="res://.godot/imported/effect_trail.png-51772c8ce95ec4f8a085aaa3f5518a30.ctex"
+path="res://.godot/imported/effect_trail.png-e5dd5fc0d21b6a1603a3f7f344e342b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/effect_trail.png"
-dest_files=["res://.godot/imported/effect_trail.png-51772c8ce95ec4f8a085aaa3f5518a30.ctex"]
+source_file="res://scribble/PNG/Retina/effect_trail.png"
+dest_files=["res://.godot/imported/effect_trail.png-e5dd5fc0d21b6a1603a3f7f344e342b1.ctex"]
 
 [params]
 

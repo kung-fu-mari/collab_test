@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6h4lkrd8wec8"
-path="res://.godot/imported/tile_grass.png-bcac90c2f15db781fef3fbf2e301bc77.ctex"
+path="res://.godot/imported/tile_grass.png-b98ad4370e88097d40899f75f703e2b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Default/tile_grass.png"
-dest_files=["res://.godot/imported/tile_grass.png-bcac90c2f15db781fef3fbf2e301bc77.ctex"]
+source_file="res://scribble/PNG/Default/tile_grass.png"
+dest_files=["res://.godot/imported/tile_grass.png-b98ad4370e88097d40899f75f703e2b1.ctex"]
 
 [params]
 

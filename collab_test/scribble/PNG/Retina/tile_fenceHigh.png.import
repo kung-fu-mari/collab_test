@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kmnbwh3qjd66"
-path="res://.godot/imported/tile_fenceHigh.png-627f640025cdf34416a9463407901d15.ctex"
+path="res://.godot/imported/tile_fenceHigh.png-63a0998bd1ed8afd9a7701df7f7e1bca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/tile_fenceHigh.png"
-dest_files=["res://.godot/imported/tile_fenceHigh.png-627f640025cdf34416a9463407901d15.ctex"]
+source_file="res://scribble/PNG/Retina/tile_fenceHigh.png"
+dest_files=["res://.godot/imported/tile_fenceHigh.png-63a0998bd1ed8afd9a7701df7f7e1bca.ctex"]
 
 [params]
 

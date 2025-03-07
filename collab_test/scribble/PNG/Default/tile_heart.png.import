@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5sspk3gnei6h"
-path="res://.godot/imported/tile_heart.png-270666acc9097999771031b01bd847df.ctex"
+path="res://.godot/imported/tile_heart.png-e653fbc8b51fd57620035df9471607ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Default/tile_heart.png"
-dest_files=["res://.godot/imported/tile_heart.png-270666acc9097999771031b01bd847df.ctex"]
+source_file="res://scribble/PNG/Default/tile_heart.png"
+dest_files=["res://.godot/imported/tile_heart.png-e653fbc8b51fd57620035df9471607ea.ctex"]
 
 [params]
 

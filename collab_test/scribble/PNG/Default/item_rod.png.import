@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtxfoucmoou60"
-path="res://.godot/imported/item_rod.png-3753e801dfc2be449d828301a1237ea0.ctex"
+path="res://.godot/imported/item_rod.png-d7a6c81da118b94a168fe220d33f53a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Default/item_rod.png"
-dest_files=["res://.godot/imported/item_rod.png-3753e801dfc2be449d828301a1237ea0.ctex"]
+source_file="res://scribble/PNG/Default/item_rod.png"
+dest_files=["res://.godot/imported/item_rod.png-d7a6c81da118b94a168fe220d33f53a8.ctex"]
 
 [params]
 

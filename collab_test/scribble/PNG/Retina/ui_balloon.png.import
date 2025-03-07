@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://begg8vy2bn661"
-path="res://.godot/imported/ui_balloon.png-b7b016f5cbe5b0183272c96ff3f77c71.ctex"
+path="res://.godot/imported/ui_balloon.png-7f53a4ce640a758ac41c4ec614606b09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/ui_balloon.png"
-dest_files=["res://.godot/imported/ui_balloon.png-b7b016f5cbe5b0183272c96ff3f77c71.ctex"]
+source_file="res://scribble/PNG/Retina/ui_balloon.png"
+dest_files=["res://.godot/imported/ui_balloon.png-7f53a4ce640a758ac41c4ec614606b09.ctex"]
 
 [params]
 

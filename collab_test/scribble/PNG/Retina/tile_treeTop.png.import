@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bplotl3e41kjp"
-path="res://.godot/imported/tile_treeTop.png-80b788035e8daa8f569c1af67b922e60.ctex"
+path="res://.godot/imported/tile_treeTop.png-1ad951b5921e2da65affc03be1e68495.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/tile_treeTop.png"
-dest_files=["res://.godot/imported/tile_treeTop.png-80b788035e8daa8f569c1af67b922e60.ctex"]
+source_file="res://scribble/PNG/Retina/tile_treeTop.png"
+dest_files=["res://.godot/imported/tile_treeTop.png-1ad951b5921e2da65affc03be1e68495.ctex"]
 
 [params]
 

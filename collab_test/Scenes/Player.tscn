@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cgd31hrfo382p"]
+[gd_scene load_steps=10 format=3 uid="uid://nw4rmvry0ylh"]
 
 [ext_resource type="Script" uid="uid://b5k23v31f86ww" path="res://Scripts/Player/Player.gd" id="1_5q1ek"]
 [ext_resource type="Texture2D" uid="uid://b0pa4o86nlq7c" path="res://scribble/PNG/Default/character_handGreen.png" id="1_lbe2p"]

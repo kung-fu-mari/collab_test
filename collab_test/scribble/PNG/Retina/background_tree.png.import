@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg5bdeuhbia4n"
-path="res://.godot/imported/background_tree.png-1660eb98832e592f6aa6ce2bcb97d87d.ctex"
+path="res://.godot/imported/background_tree.png-f44dc68c8cd9e1bc134a34a6d6bc6547.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/background_tree.png"
-dest_files=["res://.godot/imported/background_tree.png-1660eb98832e592f6aa6ce2bcb97d87d.ctex"]
+source_file="res://scribble/PNG/Retina/background_tree.png"
+dest_files=["res://.godot/imported/background_tree.png-f44dc68c8cd9e1bc134a34a6d6bc6547.ctex"]
 
 [params]
 

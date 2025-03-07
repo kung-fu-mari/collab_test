@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d22pndvjed0sh"
-path="res://.godot/imported/spritesheet_retina.png-600a5bd42513a3b74c3e1b91d6743682.ctex"
+path="res://.godot/imported/spritesheet_retina.png-5c3ed94742f08d2fbc98b6e09831db7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/Spritesheet/spritesheet_retina.png"
-dest_files=["res://.godot/imported/spritesheet_retina.png-600a5bd42513a3b74c3e1b91d6743682.ctex"]
+source_file="res://scribble/Spritesheet/spritesheet_retina.png"
+dest_files=["res://.godot/imported/spritesheet_retina.png-5c3ed94742f08d2fbc98b6e09831db7f.ctex"]
 
 [params]
 

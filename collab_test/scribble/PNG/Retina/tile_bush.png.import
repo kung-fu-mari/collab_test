@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dplc0endp0k0l"
-path="res://.godot/imported/tile_bush.png-990a958422a73e5b845532cf9a00c008.ctex"
+path="res://.godot/imported/tile_bush.png-659812eefd48eb5426676910a829939d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/tile_bush.png"
-dest_files=["res://.godot/imported/tile_bush.png-990a958422a73e5b845532cf9a00c008.ctex"]
+source_file="res://scribble/PNG/Retina/tile_bush.png"
+dest_files=["res://.godot/imported/tile_bush.png-659812eefd48eb5426676910a829939d.ctex"]
 
 [params]
 

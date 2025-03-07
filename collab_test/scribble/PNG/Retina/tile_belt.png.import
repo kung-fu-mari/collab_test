@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://citdu6pcgx1x2"
-path="res://.godot/imported/tile_belt.png-39ecea65bf7890b20261358a4a9e67a5.ctex"
+path="res://.godot/imported/tile_belt.png-76874c9832f8e0a248257b270642fe35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/tile_belt.png"
-dest_files=["res://.godot/imported/tile_belt.png-39ecea65bf7890b20261358a4a9e67a5.ctex"]
+source_file="res://scribble/PNG/Retina/tile_belt.png"
+dest_files=["res://.godot/imported/tile_belt.png-76874c9832f8e0a248257b270642fe35.ctex"]
 
 [params]
 

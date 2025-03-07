@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f7xunitwvebo"
-path="res://.godot/imported/background_cloudA.png-edcfb1d723e4a526a7b0ec611804b4c5.ctex"
+path="res://.godot/imported/background_cloudA.png-75a4e914be82f4d7dda07e886b1eebf9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/background_cloudA.png"
-dest_files=["res://.godot/imported/background_cloudA.png-edcfb1d723e4a526a7b0ec611804b4c5.ctex"]
+source_file="res://scribble/PNG/Retina/background_cloudA.png"
+dest_files=["res://.godot/imported/background_cloudA.png-75a4e914be82f4d7dda07e886b1eebf9.ctex"]
 
 [params]
 

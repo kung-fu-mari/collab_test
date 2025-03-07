@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qx410v7iuasn"
-path="res://.godot/imported/character_squareRed.png-57293cebb2a97ec454edd46c35cc14a8.ctex"
+path="res://.godot/imported/character_squareRed.png-c9b6bb9eff0c33d2ab6fc8f1a01fbacc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/character_squareRed.png"
-dest_files=["res://.godot/imported/character_squareRed.png-57293cebb2a97ec454edd46c35cc14a8.ctex"]
+source_file="res://scribble/PNG/Retina/character_squareRed.png"
+dest_files=["res://.godot/imported/character_squareRed.png-c9b6bb9eff0c33d2ab6fc8f1a01fbacc.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cto4buhqvem5m"
-path="res://.godot/imported/scribblePlatformer_vector.svg-71e9b9f66d9d0bb253713c80f6aa3cfe.ctex"
+path="res://.godot/imported/scribblePlatformer_vector.svg-23f0c8dba39b37461e52e84bc0b4d724.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/Vector/scribblePlatformer_vector.svg"
-dest_files=["res://.godot/imported/scribblePlatformer_vector.svg-71e9b9f66d9d0bb253713c80f6aa3cfe.ctex"]
+source_file="res://scribble/Vector/scribblePlatformer_vector.svg"
+dest_files=["res://.godot/imported/scribblePlatformer_vector.svg-23f0c8dba39b37461e52e84bc0b4d724.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b75jfgin6i16q"
-path="res://.godot/imported/character_handGreen.png-7299299f164172852ae82d603b75bc37.ctex"
+path="res://.godot/imported/character_handGreen.png-116b1ce477b01949fb4df287ea60f78d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/character_handGreen.png"
-dest_files=["res://.godot/imported/character_handGreen.png-7299299f164172852ae82d603b75bc37.ctex"]
+source_file="res://scribble/PNG/Retina/character_handGreen.png"
+dest_files=["res://.godot/imported/character_handGreen.png-116b1ce477b01949fb4df287ea60f78d.ctex"]
 
 [params]
 

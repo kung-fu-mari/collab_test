@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3lxj2drwkth0"
-path="res://.godot/imported/tile_spikes.png-de6ef757024275461f283c0ce5507e82.ctex"
+path="res://.godot/imported/tile_spikes.png-45aaf1009aaf3cfc8568de840712c756.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Default/tile_spikes.png"
-dest_files=["res://.godot/imported/tile_spikes.png-de6ef757024275461f283c0ce5507e82.ctex"]
+source_file="res://scribble/PNG/Default/tile_spikes.png"
+dest_files=["res://.godot/imported/tile_spikes.png-45aaf1009aaf3cfc8568de840712c756.ctex"]
 
 [params]
 

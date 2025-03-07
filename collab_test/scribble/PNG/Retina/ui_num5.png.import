@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drfag0l4gfgc6"
-path="res://.godot/imported/ui_num5.png-b0e810ccde8b1b609a99be26eca126be.ctex"
+path="res://.godot/imported/ui_num5.png-ea48fbb2f8306c6c040b35f7ae36c014.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/ui_num5.png"
-dest_files=["res://.godot/imported/ui_num5.png-b0e810ccde8b1b609a99be26eca126be.ctex"]
+source_file="res://scribble/PNG/Retina/ui_num5.png"
+dest_files=["res://.godot/imported/ui_num5.png-ea48fbb2f8306c6c040b35f7ae36c014.ctex"]
 
 [params]
 

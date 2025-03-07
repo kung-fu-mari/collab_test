@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fknpg4bm0ttp"
-path="res://.godot/imported/character_roundYellow.png-ff2ded8cbebf27836e59e745e3f2f364.ctex"
+path="res://.godot/imported/character_roundYellow.png-1b0633f9ab95ce313c5c7711abe67893.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/character_roundYellow.png"
-dest_files=["res://.godot/imported/character_roundYellow.png-ff2ded8cbebf27836e59e745e3f2f364.ctex"]
+source_file="res://scribble/PNG/Retina/character_roundYellow.png"
+dest_files=["res://.godot/imported/character_roundYellow.png-1b0633f9ab95ce313c5c7711abe67893.ctex"]
 
 [params]
 

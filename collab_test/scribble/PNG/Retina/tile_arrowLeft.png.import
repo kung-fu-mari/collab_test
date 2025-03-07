@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8rys0tifetmr"
-path="res://.godot/imported/tile_arrowLeft.png-495472b08198ab68518e92bbdc4776b1.ctex"
+path="res://.godot/imported/tile_arrowLeft.png-6fb5ca06f4222f108386005dcb2ebd1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collab_test/scribble/PNG/Retina/tile_arrowLeft.png"
-dest_files=["res://.godot/imported/tile_arrowLeft.png-495472b08198ab68518e92bbdc4776b1.ctex"]
+source_file="res://scribble/PNG/Retina/tile_arrowLeft.png"
+dest_files=["res://.godot/imported/tile_arrowLeft.png-6fb5ca06f4222f108386005dcb2ebd1a.ctex"]
 
 [params]
 

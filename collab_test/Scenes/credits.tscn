@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c0gmjojabocuo"]
+[gd_scene load_steps=6 format=3 uid="uid://c5sen7q3tacex"]
 
-[ext_resource type="Script" uid="uid://nsyfogd4pr6c" path="res://Scripts/credits.gd" id="1_1bamb"]
+[ext_resource type="Script" path="res://Scripts/credits.gd" id="1_1bamb"]
 [ext_resource type="Texture2D" uid="uid://dur5elsmb40it" path="res://scribble/Sample.png" id="1_gryuy"]
-[ext_resource type="FontFile" uid="uid://dgdkondijxkxs" path="res://scribble/Hit me, punk! 01.ttf" id="2_ccovl"]
-[ext_resource type="PackedScene" uid="uid://bj8mrf30okbwv" path="res://Scenes/creditsb.tscn" id="3_ccovl"]
+[ext_resource type="FontFile" uid="uid://xc1qd6lrbs4o" path="res://scribble/Hit me, punk! 01.ttf" id="2_ccovl"]
+[ext_resource type="PackedScene" path="res://Scenes/creditsb.tscn" id="3_ccovl"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1bamb"]
 texture = ExtResource("1_gryuy")
