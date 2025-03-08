@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="collab_test"
-run/main_scene="res://Scenes/AnimationPlayerTest.tscn"
+run/main_scene="uid://btu4qp8osnldi"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [global_group]
 

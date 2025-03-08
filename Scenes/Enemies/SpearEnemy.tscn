@@ -359,10 +359,10 @@ shape = SubResource("RectangleShape2D_fsb2l")
 
 [node name="CliffRayCast" type="RayCast2D" parent="Flipper"]
 position = Vector2(23, 27)
-target_position = Vector2(0, 74)
+target_position = Vector2(0, 49)
 
 [node name="TurnAroundRayCast" type="RayCast2D" parent="Flipper"]
-position = Vector2(23, 15)
+position = Vector2(23, -20)
 rotation = -1.57079
 target_position = Vector2(2.86102e-05, 13)
 
@@ -376,6 +376,7 @@ texture = ExtResource("3_4xiod")
 texture = ExtResource("2_gm6gh")
 
 [node name="ItemHelmet" type="Sprite2D" parent="Flipper/BodySprite"]
+modulate = Color(0.319786, 0.308457, 0.313431, 1)
 position = Vector2(0, -13)
 texture = ExtResource("5_nknsx")
 

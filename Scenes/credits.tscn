@@ -1,12 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://cjdyp2ufcw0kk"]
 
 [ext_resource type="Script" uid="uid://nsyfogd4pr6c" path="res://Scripts/credits.gd" id="1_1bamb"]
-[ext_resource type="Texture2D" uid="uid://dur5elsmb40it" path="res://scribble/Sample.png" id="2_xelri"]
+[ext_resource type="PackedScene" uid="uid://5j8fwv7xhjqw" path="res://Scenes/creditsb.tscn" id="3_ccovl"]
 [ext_resource type="FontFile" uid="uid://dgdkondijxkxs" path="res://scribble/Hit me, punk! 01.ttf" id="3_uah1q"]
-[ext_resource type="PackedScene" uid="uid://bj8mrf30okbwv" path="res://collab_test/Scenes/creditsb.tscn" id="4_7emq5"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_48xlc"]
+load_path = "res://.godot/imported/Sample.png-b6bc2d8d295fad236c9c3146ed00090e.ctex"
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1bamb"]
-texture = ExtResource("2_xelri")
+texture = SubResource("CompressedTexture2D_48xlc")
 modulate_color = Color(0.585062, 0.585062, 0.585062, 1)
 
 [node name="credits" type="Control"]
@@ -78,12 +80,12 @@ theme_override_fonts/font = ExtResource("3_uah1q")
 theme_override_font_sizes/font_size = 90
 text = "Kung-fu-Mari"
 
-[node name="credits2" parent="." instance=ExtResource("4_7emq5")]
+[node name="credits2" parent="." instance=ExtResource("3_ccovl")]
 layout_mode = 0
-offset_left = 52.0
-offset_top = 558.0
+offset_left = 54.0
+offset_top = 559.0
 offset_right = 222.0
-offset_bottom = 632.0
+offset_bottom = 635.0
 text = "return"
 
 [connection signal="pressed" from="credits2" to="." method="_on_credits_2_pressed"]

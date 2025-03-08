@@ -1,6 +1,6 @@
 extends Area2D
 
-var speed = 4
+var speed = 8
 var dir = 0
 var shooter = null
 

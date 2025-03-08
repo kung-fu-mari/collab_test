@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://cro5go2s3wsvy"]
+
+[ext_resource type="Script" uid="uid://bphvoklpb7onm" path="res://Scripts/TextArea.gd" id="1_2miih"]
+[ext_resource type="FontFile" uid="uid://dt7ge2y76kx7x" path="res://scribble/BLKCHCRY.TTF" id="2_inii2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_77iba"]
+size = Vector2(980, 422)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kri6y"]
+font = ExtResource("2_inii2")
+font_size = 36
+
+[node name="TextArea" type="Area2D"]
+z_index = -2
+script = ExtResource("1_2miih")
+label_text = "Sample Text"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(226, 122)
+shape = SubResource("RectangleShape2D_77iba")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 524.0
+offset_bottom = 133.0
+text = "sample text"
+label_settings = SubResource("LabelSettings_kri6y")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

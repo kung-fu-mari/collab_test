@@ -53,8 +53,8 @@ func blaster():
 	get_parent().add_child(bullet)
 		
 func _process(_delta: float) -> void:
-	if global_position.y > 550:
-		get_tree().reload_current_scene()
+	#if global_position.y > 550:
+		#get_tree().reload_current_scene()
 	check_for_attack()
 	handle_animation()
 

@@ -12,9 +12,9 @@ extends CharacterBody2D
 const KNOCKBACK = 600
 const LAUNCH = 150
 const FRICTION = 20
-const MAX_HP := 20
+const MAX_HP := 5
 const WALK_SPEED := 100
-const RUN_SPEED := 130
+const RUN_SPEED := 150
 
 var current_hp : int
 var speed = WALK_SPEED
@@ -37,11 +37,9 @@ func _process(_delta: float) -> void:
 		state = "patrolling"
 		march_direction *= -1
 		$Flipper.scale.x *= -1
-	if wall_check.is_colliding() and state != "chasing":
+	if wall_check.is_colliding():
 		march_direction *= -1
 		$Flipper.scale.x *= -1
-	if global_position.y > 550:
-		die_and_respawn()
 	if state == "chasing" or state == "attacking":
 		if anim_player.current_animation != "spear_stab_1":
 			chase_player()
@@ -95,11 +93,7 @@ func take_knockback() -> void:
 	velocity.y -= LAUNCH
 	
 func die_and_respawn() -> void:
-	self.hide()
-	await get_tree().create_timer(1).timeout
-	current_hp = MAX_HP
-	self.global_position = spawn_position
-	self.show()
+	queue_free()
 
 func _on_stab_area_body_entered(_body: Node2D) -> void:
 	state = "attacking"
