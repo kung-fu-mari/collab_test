@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ce4nx7ccrp7ad"
+path="res://.godot/imported/Metal - Big Bell.wav-be8cf60e15e06974d715aa56582ac753.sample"
+
+[deps]
+
+source_file="res://scribble/Metal - Big Bell.wav"
+dest_files=["res://.godot/imported/Metal - Big Bell.wav-be8cf60e15e06974d715aa56582ac753.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

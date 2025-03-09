@@ -128,7 +128,23 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 9
 theme_override_fonts/font = ExtResource("3_n45e2")
 theme_override_font_sizes/font_size = 60
-text = "The Last of Us (prototype)"
+text = "The Last of Us (lite)"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 103.0
+offset_top = 81.0
+offset_right = 234.0
+offset_bottom = 165.0
+color = Color(0.392157, 0.392157, 0.392157, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 550.0
+offset_right = 1118.0
+offset_bottom = 634.0
+color = Color(0.392157, 0.392157, 0.392157, 1)
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/credits" to="." method="_on_credits_pressed"]

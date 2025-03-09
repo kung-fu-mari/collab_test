@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var anim_player := $AnimationPlayer
 @onready var hitbox := $SpriteContainer/RightHandSprite/SwordSprite/Hitbox
+@onready var hp_bar := $CanvasLayer/HUD/ProgressBar
 
 const SPEED := 300.0
 const JUMP_VELOCITY := -400.0
@@ -13,6 +14,7 @@ const LAUNCH := 150
 var current_hp := MAX_HP
 var jumps_left := MAX_JUMPS
 var current_state : String = "idle"
+var ads_visible := 0
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -26,21 +28,23 @@ func _physics_process(delta: float) -> void:
 		jumps_left -= 1
 		velocity.y = JUMP_VELOCITY
 		
-
-	var direction := Input.get_axis("left", "right")
-	if direction:
-		if current_state != "swinging":
-			current_state = "running"
-		if direction < 0:
-			$SpriteContainer.scale.x = -1
-		else:
-			$SpriteContainer.scale.x = 1
-			scale.x = 1
-		velocity.x = direction * SPEED
-	else:
-		if velocity.x == 0:
+	if not ads_visible > 0:
+		var direction := Input.get_axis("left", "right")
+		if direction:
 			if current_state != "swinging":
-				current_state = "idle"
+				current_state = "running"
+			if direction < 0:
+				$SpriteContainer.scale.x = -1
+			else:
+				$SpriteContainer.scale.x = 1
+				scale.x = 1
+			velocity.x = direction * SPEED
+		else:
+			if velocity.x == 0:
+				if current_state != "swinging":
+					current_state = "idle"
+			velocity.x = move_toward(velocity.x, 0, SPEED)
+	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	move_and_slide()
 
@@ -51,7 +55,11 @@ func blaster():
 	bullet.dir = $SpriteContainer.scale.x
 	bullet.shooter = self
 	get_parent().add_child(bullet)
-		
+
+func _ready() -> void:
+	hp_bar.max_value = MAX_HP
+	hp_bar.value = MAX_HP
+	
 func _process(_delta: float) -> void:
 	#if global_position.y > 550:
 		#get_tree().reload_current_scene()
@@ -99,6 +107,7 @@ func damage_flash() -> void:
 		
 func take_damage() -> void:
 	current_hp -= 1
+	hp_bar.value = current_hp
 	if current_hp <= 0:
 		get_tree().reload_current_scene()
 			

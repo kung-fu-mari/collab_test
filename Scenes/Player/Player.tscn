@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cgd31hrfo382p"]
+[gd_scene load_steps=18 format=3 uid="uid://cgd31hrfo382p"]
 
 [ext_resource type="Script" uid="uid://b5k23v31f86ww" path="res://Scripts/Player/Player.gd" id="1_5q1ek"]
 [ext_resource type="Texture2D" uid="uid://b0pa4o86nlq7c" path="res://scribble/PNG/Default/character_handGreen.png" id="1_lbe2p"]
@@ -407,6 +407,15 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dewec"]
 size = Vector2(38.933, 80.7358)
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_jmcll"]
+polygon = PackedVector2Array(-1, -26, 6, -26, 11, -22, 14, -17, 14, 15, 10, 20, 6, 24, 1, 24, -5, 24, -10, 20, -13, 17, -14, 14, -14, -16, -13, -19, -11, -22, -6, -26)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dh7g4"]
+bg_color = Color(0.151988, 0.27326, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h5oin"]
+bg_color = Color(0.0753347, 0.587935, 0, 1)
+
 [node name="BeanHands" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_5q1ek")
 
@@ -464,5 +473,28 @@ position = Vector2(7.62939e-06, 1.26808)
 shape = SubResource("RectangleShape2D_dewec")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_jmcll")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HUD"]
+layout_mode = 0
+offset_right = 61.0
+offset_bottom = 648.0
+theme_override_styles/background = SubResource("StyleBoxFlat_dh7g4")
+theme_override_styles/fill = SubResource("StyleBoxFlat_h5oin")
+value = 22.37
+fill_mode = 3
+show_percentage = false
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_hurt_box_area_entered"]
